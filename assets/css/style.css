@@ -402,6 +402,7 @@ h6 {
 /*------------------- 1.7. Wordpress Default -------------------*/
 .admin-bar .default-header .sticky-wrapper.sticky {
   top: 32px;
+  background-color: #000;
 }
 
 .wp-block-search__label {
@@ -4845,6 +4846,7 @@ ul.wp-block-latest-posts li:last-child {
 
 .widget-about .footer-logo {
   margin-bottom: 37px;
+
 }
 .widget-about .about-text {
   max-width: 350px;
@@ -4984,10 +4986,13 @@ ul.wp-block-latest-posts li:last-child {
 .nav-header {
   position: relative;
   z-index: 41;
+  background-color: #000;
+
 }
 
 .sticky-wrapper {
   transition: 0.4s ease-in-out;
+  background-color: #000;
 }
 .sticky-wrapper.sticky {
   position: fixed;
@@ -5317,7 +5322,7 @@ ul.wp-block-latest-posts li:last-child {
 }
 .header-layout2 .header-top {
   padding: 17px 109px;
-  border-bottom: 1px solid #4B4D49;
+  border-bottom: 1px solid #000;
 }
 .header-layout2 .sidebar-btn {
   color: var(--white-color);
@@ -5327,7 +5332,8 @@ ul.wp-block-latest-posts li:last-child {
 }
 .header-layout2 .sticky-wrapper {
   padding: 0px 109px;
-  border-bottom: 1px solid #4B4D49;
+
+  border-bottom: 1px solid #000;
 }
 .header-layout2 .sticky-wrapper .header-logo {
   display: none;
@@ -5349,7 +5355,7 @@ ul.wp-block-latest-posts li:last-child {
   background: var(--white-color);
 }
 .header-layout2 .sticky-wrapper.sticky {
-  background: #4B4D49;
+  background:#000;
 }
 .header-layout2 .sticky-wrapper.sticky .header-logo {
   display: block;
@@ -5494,6 +5500,7 @@ ul.wp-block-latest-posts li:last-child {
 /*------------------- 4.3. Footer  -------------------*/
 .footer-wrapper {
   background: rgba(255, 244, 239, 0.7);
+
 }
 
 .copyright-wrap {
