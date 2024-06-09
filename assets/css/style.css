@@ -1264,7 +1264,7 @@ select.style-border,
 textarea.style-border,
 input.style-border {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.19);
+  border: 1px solid  rgba(255, 255, 255, 0.19);
   border-radius: 0;
   color: var(--white-color);
 }
@@ -9265,18 +9265,49 @@ span.select2-selection.select2-selection--single:focus {
     height: 300px;
   }
 }
+.white-text {
+  color: #fff; /* Sets the text color to white */
+}
 
 /*reservation page******************/
 .contact-page-wrap,
 .reservation-page {
-  background: #F8F7F4;
+  background: #fff;
+}
+input.name{
+color: #fff;
+background-color: #fff;
 }
 
 .contact-form-wrap,
 .reservation-form-wrap {
   background: #F8F7F4;
   padding: 90px;
+  background-color: #000;
+
 }
+/* CSS */
+#name::placeholder {
+  color: #fff; /* Sets the placeholder text color to white */
+}
+/* CSS */
+#email::placeholder {
+  color: #fff; /* Sets the placeholder text color to white */
+}
+/* CSS */
+#guest::placeholder {
+  color: #fff; /* Sets the placeholder text color to white */
+}
+/* CSS */
+#message::placeholder {
+  color: #fff; /* Sets the placeholder text color to white */
+}
+#event::placeholder {
+  color: #fff; /* Sets the placeholder text color to white */
+}
+
+
+
 
 /* Medium Large devices */
 @media (max-width: 1399px) {
@@ -9851,7 +9882,7 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
-/* Testimonial 2 ---------------------------------- */
+/* Testimonial 2 ---------------------------------- 
 .testi-box2 {
   text-align: center;
   max-width: 1006px;
@@ -9908,7 +9939,7 @@ span.select2-selection.select2-selection--single:focus {
   left: 0;
   right: auto;
 }
-
+*/
 /* Medium Large devices */
 @media (max-width: 1399px) {
   .testimonial-area-2 .icon-box {
@@ -12115,107 +12146,6 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--theme-color);
 }
 
-.product-thumb-area {
-  position: relative;
-}
-.product-thumb-area .product-thumb-tab {
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-}
-
-.product-thumb-tab {
-  --thumb: 87px;
-  --gap: 0px;
-  position: relative;
-  z-index: 3;
-  display: inline-flex;
-  border-radius: 20px;
-  align-items: end;
-  justify-content: center;
-  width: 100%;
-}
-.product-thumb-tab .tab-btn {
-  background-color: var(--white-color);
-  cursor: pointer;
-  height: var(--thumb);
-  width: var(--thumb);
-  padding: var(--gap);
-  border-radius: 20px;
-}
-.product-thumb-tab .tab-btn img {
-  max-width: 100%;
-  width: 100%;
-  border-radius: inherit;
-}
-.product-thumb-tab .tab-btn:not(:last-of-type) {
-  margin-right: 15px;
-}
-
-.product-big-img {
-  background-color: #f4f4f4;
-  text-align: center;
-  border-radius: 20px;
-  position: relative;
-}
-.product-big-img .img {
-  width: 100%;
-  border-radius: 20px;
-}
-.product-big-img .img img {
-  width: 100%;
-  border-radius: 20px;
-  height: 100%;
-  object-fit: cover;
-}
-.product-big-img .add_to_wishlist {
-  position: absolute;
-  top: 48px;
-  right: 48px;
-}
-
-.product-thumb,
-.product-big-img {
-  background-color: var(--smoke-color3);
-  text-align: center;
-  border-radius: 0px;
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.product-thumb .img img,
-.product-big-img .img img {
-  object-fit: cover;
-  border-radius: 0px;
-}
-.product-thumb .add_to_wishlist,
-.product-big-img .add_to_wishlist {
-  position: absolute;
-  top: 48px;
-  right: 48px;
-  color: var(--theme-color);
-}
-.product-thumb .add_to_wishlist:hover i,
-.product-big-img .add_to_wishlist:hover i {
-  font-weight: 700;
-}
-.product-thumb .product-tag,
-.product-big-img .product-tag {
-  height: 25px;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: #F41E1E;
-  line-height: 25px;
-  color: var(--white-color);
-  border-radius: 0px;
-  position: absolute;
-  padding: 0 10px;
-  top: 23px;
-  left: 23px;
-  z-index: 9;
-}
 
 .quantity {
   position: relative;
