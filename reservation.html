@@ -572,7 +572,7 @@
         emailjs.send("service_tdpqhd7", "template_vbm8303", {
             email: subscriberEmail
         }).then(function(response) {
-            alert('Thank you for subscribing!');
+            alert('Thank you for subscribing!'); // Success notification
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
             alert('Subscription failed. Please try again later.');
