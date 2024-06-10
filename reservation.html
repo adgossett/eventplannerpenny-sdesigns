@@ -506,9 +506,12 @@
     });
 </script>
 
+
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-    document.getElementById('submitReservation').addEventListener('click', function() {
+    document.getElementById('reservationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
         // Fetch values from the form
         var name = document.getElementById('name').value.trim();
         var email = document.getElementById('email').value.trim();
@@ -540,9 +543,21 @@
             alert('Email could not be sent. Please try again later.');
             console.log('FAILED...', error);
         });
+
+        // Optional: You can clear the form after submission
+        this.reset();
     });
 </script>
-</body>
+
+
+
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "CGFtmLlX8ovPvnA2R",
+       });
+    })();
+ </script>
  <!-- Scroll To Top -->
  <div class="scroll-top">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
