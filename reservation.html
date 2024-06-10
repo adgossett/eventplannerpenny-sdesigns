@@ -549,6 +549,46 @@
     });
 </script>
 
+<!--subscribers-->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Fetch the subscriber's email address
+        var subscriberEmail = document.getElementById('subscriberEmail').value.trim();
+
+        // Check if the email address is valid
+        if (!validateEmail(subscriberEmail)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Your EmailJS user ID
+        var userID = 'CGFtmLlX8ovPvnA2R'; // Replace with your actual user ID
+
+        // Send email via EmailJS
+        emailjs.init(userID);
+        emailjs.send("service_tdpqhd7", "template_vbm8303", {
+            email: subscriberEmail
+        }).then(function(response) {
+            alert('Thank you for subscribing!');
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            alert('Subscription failed. Please try again later.');
+            console.log('FAILED...', error);
+        });
+
+        // Optional: You can clear the form after submission
+        this.reset();
+    });
+
+    // Function to validate email address format
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+</script>
 
 
 <script type="text/javascript">
