@@ -88,7 +88,9 @@
                     <li><a  style="color: #fff;" href="index.html#about">About Us</a></li>
                     <li><a  style="color: #fff;" href="reservation.html">Appointment Bookings</a></li>
                     <li><a style="color: #fff;"  href="index.html#about">Our Projects</a></li>
-                    <li><a  style="color: #fff;" href="index.html#footer"></i>"Contact Us</a></li>
+                    <li><a style="color: #fff;"  href="index.html">Our Projects</a></li>
+
+
                 </ul>
             </div>
         </div>
@@ -166,7 +168,9 @@
                 
                     
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <li><a href="#footer" id="scrollTofooter">Contact Us</a></li>
+
+
                     </li>
                 </ul>
             </div>
@@ -702,6 +706,16 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
         </svg>
     </div>-->
+
+    <script>
+        document.getElementById('scrollToContact').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default behavior of anchor tag
+            var footer = document.getElementById('footer'); // Assuming the id of the footer is 'footer'
+            footer.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the footer
+        });
+        </script>
+        
+        
 
     <!--==============================
     All Js File
